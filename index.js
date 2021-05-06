@@ -30,6 +30,6 @@ app.all("*", (req, res) => {
 });
 
 // Launch server
-app.listen("3111", () => {
-  console.log("3, 2, 1, TO THE MOOOOOOOOOOON!");
+app.listen(process.env.PORT, () => {
+  console.log("Server launched");
 });
